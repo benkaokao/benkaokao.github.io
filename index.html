@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<script>
+		function ajax(a,b,c){ // Url, Callback, just a placeholder 
+			c=new XMLHttpRequest; 
+			c.open('GET',a); 
+			c.onload=b; 
+			c.send() 
+		} 
+		ajax('https://benkaokao.github.io/data.txt',function(){ 
+			alert(this.response); 
+		}); 
+	</script>
     <meta charset="utf-8">
     <title>你好，GitHub</title>
   </head>
